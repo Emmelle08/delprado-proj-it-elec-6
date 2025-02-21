@@ -1,0 +1,10 @@
+.navigation {
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+.navigation h1 {
+    color: white;
+}
