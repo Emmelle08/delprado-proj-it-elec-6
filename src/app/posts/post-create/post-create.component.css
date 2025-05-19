@@ -1,24 +1,77 @@
-.active {
-    border-bottom: 2px solid white;
-}
-.active:hover {
-    border-bottom: 2px solid white;
-    transition-duration: 0.3s;
-}
-h2 {
-    margin-left: 14%;
-}
-.post-area {
-    margin-left: 13%;
+/* Styling for mat-card with add post form */
+mat-card {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 35%; /* Left margin to position it in the middle */
+    margin-top: 5%;  /* Top margin for positioning */
+    background: linear-gradient(45deg, #552d91, #f5a623); /* Lakers-inspired gradient */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling the form fields */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  /* Button for image upload */
+  .file-button {
+    width: 100%;
+    background-color: #f5a623; /* Gold color */
+    color: white;
     padding: 10px;
-}
-button {
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .file-button:hover {
+    background-color: #552d91; /* Purple color */
+  }
+  
+  /* Image preview styling */
+  .image-preview {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Error message styling */
+  mat-error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Save button styling */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #f5a623; /* Gold color */
+    color: white;
+    border: none;
+    border-radius: 4px;
     padding: 10px;
-    font-family: 'Poppins';
-}
-textarea {
-    padding: 10px;
-}
-.content {
-    margin-left: 14%;
-}
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the submit button */
+  button[type="submit"]:hover {
+    background-color: #552d91; /* Purple color on hover */
+  }
+  

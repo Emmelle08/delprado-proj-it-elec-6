@@ -1,0 +1,21 @@
+<h2>Basketball Rants</h2>
+
+<div *ngFor="let rant of rants" class="rant">
+  <p><strong>Rant:</strong> {{ rant.content }}</p>
+
+  <div *ngIf="rant.replies?.length" class="replies">
+    <div *ngFor="let reply of rant.replies" class="reply">
+      <p><em>{{ reply.content }}</em></p>
+    </div>
+  </div>
+
+  <textarea
+    [(ngModel)]="newReplyContent[rant._id]"
+    placeholder="Write a reply..."
+    rows="2"
+    cols="50">
+  </textarea>
+  <br />
+  <button (click)="addReply(rant._id)">Reply</button>
+  <hr />
+</div>

@@ -1,4 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #566a98; color: rgb(246, 246, 246);}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: url(https://images.ctfassets.net/3m6gg2lxde82/42MssJIQBFsdGIi1ERn5YW/c1a2079df1a8bd98c55255321dd536b5/dear-basketball.png?w=2048&h=1137&fit=fill&f=faces&q=90&fm=webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+}
+
+/* Chicago Bulls Theme */
+.bulls-theme {
+  background: linear-gradient(to right, #ce1141, #900C3F) !important; /* Bulls red gradient */
+  color: white;
+}
+
+.bulls-background {
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/2408064531/display_1500/stock-vector-michael-jordan-man-head-icon-facelogo-sign-symbol-win-red-bull-usa-nba-art-design-template-2408064531.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Ensure text remains readable on Bulls theme */
+body.bulls-background,
+.bulls-background mat-toolbar {
+  color: white;
+}
+
+/* Make rant text readable */
+.bulls-background .rant-content,
+.bulls-background .rant-replies,
+.bulls-background .reply,
+.bulls-background textarea,
+.bulls-background input,
+.bulls-background button {
+  color: black;
+}
+
+/* Background override for Post Create and Post List */
+.bulls-background app-post-create,
+.bulls-background app-post-list,
+.bulls-background .post-create-form,
+.bulls-background .post-list-table {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
