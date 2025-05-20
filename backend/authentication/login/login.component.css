@@ -1,0 +1,64 @@
+/* Ensure the body takes up the full height of the viewport */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  /* Styling for mat-card with Lakers-inspired gradient */
+  mat-card {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #552d91, #f5a623); /* Lakers purple and gold gradient */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+  
+  /* Styling for the form fields */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  /* Styling for the login button */
+  button {
+    width: 100%;
+    background-color: #f5a623; /* Gold color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the login button */
+  button:hover {
+    background-color: #552d91; /* Purple color on hover */
+  }
+  
+  /* Styling for error messages */
+  mat-error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Optional: Add a subtle background to the page */
+  body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
